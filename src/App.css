@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px red solid; */
+}
+
+.light-theme {
+  --text: hsl(200, 15%, 8%);
+  --background: hsl(0, 0%, 98%);
+  --input: hsl(0, 0%, 100%);
+  --elements: hsl(0, 0%, 100%);
+}
+
+.dark-theme {
+  --text: hsl(0, 0%, 100%);
+  --background: hsl(207, 26%, 17%);
+  --input: hsl(209, 23%, 22%);
+  --elements: hsl(209, 23%, 22%);
+}
+
+
+/* General Styling */
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--text);
+  min-height: 100%;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+main {
+  background: var(--background);
+  min-height: 100vh;
+}
+
+main .flex {
+  justify-content: space-between;
+}
+
+.grid-main {
+  padding: 5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5rem;
+}
+
+.loader {
+  position: absolute !important;
+  top:50%;
+  left: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid-main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-main {
+    grid-template-columns: 1fr;
+  }
+
+}
