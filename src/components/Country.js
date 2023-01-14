@@ -5,7 +5,6 @@ import {Link} from "react-router-dom"
 import NeighbourCountry from './NeighbourCountry';
 import { PuffLoader } from "react-spinners";
 import {BsArrowLeft} from "react-icons/bs";
-import Navbar from './Navbar';
 
 function Country() {
   const {countryName} = useParams();

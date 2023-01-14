@@ -22,7 +22,7 @@ function Navbar() {
     <nav id="navbar">
       <div className="container flex">
         <h3 className="logo-heading">Where in the world ?</h3>
-        <a href="" className="btn-theme flex light" onClick={toggleTheme}>
+        <a href="/" className="btn-theme flex light" onClick={toggleTheme}>
           {theme === "light-theme" ? <FaRegMoon class='btn-theme-icon'/> :
           <FaMoon class='btn-theme-icon'/>}
           <span className="btn-theme-text"> {theme === "light-theme" ? "Dark" : "Light"} Mode </span>
